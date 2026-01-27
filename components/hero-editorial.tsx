@@ -107,9 +107,9 @@ export function HeroEditorial() {
       {/* Text Section - Center */}
       <div className="px-6 lg:px-12 py-6 relative z-10 flex-shrink-0">
   <div className="max-w-3xl mx-auto text-center">
-    <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-tight">
-      <span style={{ color: '#583d2b' }}>Normalizing mental wellness
-       with</span>
+    <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-tight font-sans">
+      <span style={{ color: '#583d2b' }}>Normalizing&nbsp;mental&nbsp;wellness<br />
+      with<br /></span>
       <span style={{ color: '#272821' }} className="text-5xl md:text-6xl lg:text-7xl">Easely</span>
     </h1>
 
@@ -129,19 +129,19 @@ export function HeroEditorial() {
       </button>
       <Script src="https://server.fillout.com/embed/v1/" strategy="afterInteractive" />
 
-      <a
+      {/* <a
         href="#science"
         style={{ borderColor: '#583d2b' }}
         className="border px-8 py-3 text-xs uppercase tracking-widest hover:bg-[#583d2b] hover:text-background transition-colors text-center font-sans"
       >
         The Science
-      </a>
+      </a> */}
         <a
         href="https://geteasely.substack.com"
         target="_blank"
         rel="noopener noreferrer"
         style={{ backgroundColor: '#583d2b' }}
-        className="text-background px-8 py-3 text-xs uppercase tracking-widest font-sans"
+        className="text-background px-8 py-3 text-xs uppercase tracking-widest hover:opacity-80 transition-opacity text-center font-sans"
         >
         Newsletter
       </a>
