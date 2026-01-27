@@ -108,7 +108,7 @@ export function HeroEditorial() {
       <div className="px-6 lg:px-12 py-6 relative z-10 flex-shrink-0">
   <div className="max-w-3xl mx-auto text-center">
     <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-tight font-sans">
-      <span style={{ color: '#583d2b' }}>Normalizing&nbsp;mental&nbsp;wellness<br />
+      <span style={{ color: '#583d2b' }}>Normalizing&nbsp;Mental&nbsp;Wellness<br />
       with<br /></span>
       <span style={{ color: '#272821' }} className="text-5xl md:text-6xl lg:text-7xl">easely</span>
     </h1>
