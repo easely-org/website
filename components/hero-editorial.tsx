@@ -81,7 +81,7 @@ export function HeroEditorial() {
   useEffect(() => {
     // Alpha waves (8-12 Hz) - faster
     const cleanupTop = topCanvasRef.current ? setupWaveCanvas(topCanvasRef.current, { yOffset: 0.5, speedMultiplier: 1.0 }) : () => {}
-    // Theta waves (4-8 Hz) - slower (roughly half the speed of alpha)
+    // Beta waves (12-30 Hz) - slower (roughly half the speed of alpha)
     const cleanupBottom = bottomCanvasRef.current
       ? setupWaveCanvas(bottomCanvasRef.current, { yOffset: 0.5, speedMultiplier: 0.5 })
       : () => {}
@@ -108,9 +108,9 @@ export function HeroEditorial() {
       <div className="px-6 lg:px-12 py-6 relative z-10 flex-shrink-0">
   <div className="max-w-3xl mx-auto text-center">
     <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-tight">
-      <span style={{ color: '#583d2b' }}>Normalizing mental wellness<br />
-      for everyone with<br /></span>
-      <span style={{ color: '#272821' }}>easely</span>
+      <span style={{ color: '#583d2b' }}>Normalizing mental&nbsp;wellness<br />
+       with<br /></span>
+      <span style={{ color: '#272821' }} className="text-5xl md:text-6xl lg:text-7xl">Easely</span>
     </h1>
 
     <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center items-center">
@@ -122,7 +122,8 @@ export function HeroEditorial() {
         data-fillout-dynamic-resize
         data-fillout-inherit-parameters
         data-fillout-popup-size="small"
-        className="bg-foreground text-background px-8 py-3 text-xs uppercase tracking-widest hover:opacity-80 transition-opacity text-center cursor-pointer"
+        style={{ backgroundColor: '#583d2b' }}
+        className="text-background px-8 py-3 text-xs uppercase tracking-widest hover:opacity-80 transition-opacity text-center cursor-pointer font-sans"
       >
         Join Waitlist
       </button>
@@ -130,7 +131,8 @@ export function HeroEditorial() {
 
       <a
         href="#science"
-        className="border border-foreground px-8 py-3 text-xs uppercase tracking-widest hover:bg-foreground hover:text-background transition-colors text-center"
+        style={{ borderColor: '#583d2b' }}
+        className="border px-8 py-3 text-xs uppercase tracking-widest hover:bg-[#583d2b] hover:text-background transition-colors text-center font-sans"
       >
         The Science
       </a>
@@ -138,7 +140,8 @@ export function HeroEditorial() {
         href="https://geteasely.substack.com"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-foreground text-background px-8 py-3 text-xs uppercase tracking-widest"
+        style={{ backgroundColor: '#583d2b' }}
+        className="text-background px-8 py-3 text-xs uppercase tracking-widest font-sans"
         >
         Newsletter
       </a>
@@ -153,7 +156,7 @@ export function HeroEditorial() {
         <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-background to-transparent z-10" />
         <canvas ref={bottomCanvasRef} className="absolute inset-0 w-full h-full" />
         <div className="absolute bottom-6 right-6 lg:right-12 text-right">
-          <b><p className="text-xs font-mono text-foreground/50 tracking-widest uppercase">Theta Waves 4-8 Hz</p></b>
+          <b><p className="text-xs font-mono text-foreground/50 tracking-widest uppercase">Beta Waves 12-30 Hz</p></b>
         </div>
       </div>
     </section>

@@ -21,9 +21,9 @@ export function HeroSection() {
               Now available for clinical trials
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-tight text-foreground text-balance">
+            {/* <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-tight text-foreground text-balance">
               Normalizing mental wellness for everyone with <span className="font-bold italic">Easely</span>
-            </h1>
+            </h1> */}
 
             <p className="mt-6 text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 text-pretty">
               Easely delivers research-grade brain monitoring in a design that patients love. Advanced neural insights,
