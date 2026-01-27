@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://easely.com'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://easely-website.vercel.app'
 
 export const metadata: Metadata = {
   title: "Easely | Understand Your Mind",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: "Easely",
     images: [
       {
-        url: `${siteUrl}/og-image.jpeg`,
+        url: '/og-image.jpeg', // Relative path - metadataBase will make it absolute
         width: 1024,
         height: 1024,
         alt: 'Easely - Understand Your Mind',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Easely | Understand Your Mind",
     description: "Consumer EEG technology that makes brain-computer interfaces accessible to everyone.",
-    images: [`${siteUrl}/og-image.jpeg`],
+    images: ['/og-image.jpeg'], // Relative path - metadataBase will make it absolute
   },
 }
 
