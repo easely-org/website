@@ -81,7 +81,7 @@ export function HeroEditorial() {
   useEffect(() => {
     // Alpha waves (8-12 Hz) - faster
     const cleanupTop = topCanvasRef.current ? setupWaveCanvas(topCanvasRef.current, { yOffset: 0.5, speedMultiplier: 1.0 }) : () => {}
-    // Beta waves (12-30 Hz) - slower (roughly half the speed of alpha)
+    // Theta waves (4-8 Hz) - slower (roughly half the speed of alpha)
     const cleanupBottom = bottomCanvasRef.current
       ? setupWaveCanvas(bottomCanvasRef.current, { yOffset: 0.5, speedMultiplier: 0.5 })
       : () => {}
@@ -98,7 +98,7 @@ export function HeroEditorial() {
       <div className="flex-1 relative min-h-[28vh]">
         <canvas ref={topCanvasRef} className="absolute inset-0 w-full h-full" />
         <div className="absolute top-6 left-6 lg:left-12">
-          <b><p className="text-xs font-mono text-foreground/50 tracking-widest uppercase">Alpha Waves 8-12 Hz</p></b>
+          <b><p className="text-xs font-sans text-foreground/50 tracking-widest uppercase">Alpha Waves 8-12 Hz</p></b>
         </div>
         {/* Gradient fade to center */}
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent" />
@@ -108,8 +108,8 @@ export function HeroEditorial() {
       <div className="px-6 lg:px-12 py-6 relative z-10 flex-shrink-0">
   <div className="max-w-3xl mx-auto text-center">
     <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-tight">
-      <span style={{ color: '#583d2b' }}>Normalizing mental&nbsp;wellness<br />
-       with<br /></span>
+      <span style={{ color: '#583d2b' }}>Normalizing mental wellness
+       with</span>
       <span style={{ color: '#272821' }} className="text-5xl md:text-6xl lg:text-7xl">Easely</span>
     </h1>
 
@@ -156,7 +156,7 @@ export function HeroEditorial() {
         <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-background to-transparent z-10" />
         <canvas ref={bottomCanvasRef} className="absolute inset-0 w-full h-full" />
         <div className="absolute bottom-6 right-6 lg:right-12 text-right">
-          <b><p className="text-xs font-mono text-foreground/50 tracking-widest uppercase">Beta Waves 12-30 Hz</p></b>
+          <b><p className="text-xs font-sans text-foreground/50 tracking-widest uppercase">Theta Waves 4-8 Hz</p></b>
         </div>
       </div>
     </section>
