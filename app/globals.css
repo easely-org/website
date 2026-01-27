@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -5,8 +6,8 @@
 
 /* White background with teal text theme */
 :root {
-  --background: #ffffff;
-  --foreground: #324d48;
+  --background: #efe2d3;
+  --foreground: #272821;
   --card: #f8f9fa;
   --card-foreground: #324d48;
   --popover: #ffffff;
@@ -76,8 +77,8 @@
 }
 
 @theme inline {
-  --font-sans: "Nourd", "Helvetica Neue", Arial, sans-serif;
-  --font-serif: "Nourd", "Helvetica Neue", Arial, serif;
+  --font-sans: "Quicksand", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Quicksand", "Helvetica Neue", Arial, serif;
   --font-mono: "JetBrains Mono", "JetBrains Mono Fallback", monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);

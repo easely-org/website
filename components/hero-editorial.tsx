@@ -44,8 +44,8 @@ export function HeroEditorial() {
 
       waves.forEach((wave, index) => {
         ctx.beginPath()
-        // All waves in black with varying opacity
-        ctx.strokeStyle = `rgba(26, 26, 26, ${0.12 + index * 0.08})`
+        // All waves in #7d6050 with varying opacity
+        ctx.strokeStyle = `rgba(125, 96, 80, ${0.12 + index * 0.08})`
         ctx.lineWidth = 1.5
 
         const baseY = height * waveConfig.yOffset
@@ -107,9 +107,10 @@ export function HeroEditorial() {
       {/* Text Section - Center */}
       <div className="px-6 lg:px-12 py-6 relative z-10 flex-shrink-0">
   <div className="max-w-3xl mx-auto text-center">
-    <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-tight text-foreground text-balance">
-      Normalizing mental wellness for everyone with{" "}
-      <span className="font-bold italic">Easely</span>
+    <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-tight">
+      <span style={{ color: '#583d2b' }}>Normalizing mental wellness<br />
+      for everyone with<br /></span>
+      <span style={{ color: '#272821' }}>easely</span>
     </h1>
 
     <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center items-center">
