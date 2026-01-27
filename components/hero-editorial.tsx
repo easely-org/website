@@ -110,7 +110,7 @@ export function HeroEditorial() {
     <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-tight font-sans">
       <span style={{ color: '#583d2b' }}>Normalizing&nbsp;mental&nbsp;wellness<br />
       with<br /></span>
-      <span style={{ color: '#272821' }} className="text-5xl md:text-6xl lg:text-7xl">Easely</span>
+      <span style={{ color: '#272821' }} className="text-5xl md:text-6xl lg:text-7xl">easely</span>
     </h1>
 
     <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center items-center">
