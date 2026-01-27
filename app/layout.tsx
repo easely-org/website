@@ -3,21 +3,23 @@ import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://easely.com'
+
 export const metadata: Metadata = {
   title: "Easely | Understand Your Mind",
   description: "Consumer EEG technology that makes brain-computer interfaces accessible to everyone.",
   generator: 'v0.app',
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://easely.com'),
+  metadataBase: new URL(siteUrl),
   openGraph: {
     title: "Easely | Understand Your Mind",
     description: "Consumer EEG technology that makes brain-computer interfaces accessible to everyone.",
-    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://easely.com',
+    url: siteUrl,
     siteName: "Easely",
     images: [
       {
-        url: '/og-image.png', // Add your Open Graph image at /public/og-image.png
-        width: 1200,
-        height: 630,
+        url: `${siteUrl}/og-image.jpeg`,
+        width: 1024,
+        height: 1024,
         alt: 'Easely - Understand Your Mind',
       },
     ],
@@ -28,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Easely | Understand Your Mind",
     description: "Consumer EEG technology that makes brain-computer interfaces accessible to everyone.",
-    images: ['/og-image.png'], // Add your Twitter Card image at /public/og-image.png
+    images: [`${siteUrl}/og-image.jpeg`],
   },
 }
 
