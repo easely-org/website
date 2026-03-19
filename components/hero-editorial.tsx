@@ -129,13 +129,13 @@ export function HeroEditorial() {
       </button>
       <Script src="https://server.fillout.com/embed/v1/" strategy="afterInteractive" />
 
-      {/* <a
-        href="#science"
-        style={{ borderColor: '#583d2b' }}
-        className="border px-8 py-3 text-xs uppercase tracking-widest hover:bg-[#583d2b] hover:text-background transition-colors text-center font-sans"
+      <a
+        href="#about"
+        style={{ backgroundColor: '#583d2b' }}
+        className="text-background px-8 py-3 text-xs uppercase tracking-widest hover:opacity-80 transition-opacity text-center font-sans"
       >
-        The Science
-      </a> */}
+        About
+      </a>
         <a
         href="https://geteasely.substack.com"
         target="_blank"
