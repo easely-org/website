@@ -44,7 +44,7 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         {children}
         <Analytics />
-</body>
+      </body>
     </html>
   )
 }
